@@ -1,0 +1,1 @@
+print('The number is Even' if not int(input('Enter an integer: ')) % 2 else 'The number is Odd')
