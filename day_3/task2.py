@@ -10,7 +10,7 @@ while True:
 
     try:
         num = float(user_input)
-    except:
+    except ValueError:
         print('Invalid input.')
         continue
 
