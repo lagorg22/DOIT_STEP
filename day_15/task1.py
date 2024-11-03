@@ -2,9 +2,9 @@
 def positive_checker(func):
     def wrapper(*args, **kwargs):
         if args[0] > 0:
-            return func(*args, **kwargs)
+            print(func(*args, **kwargs))
         else:
-            raise ValueError('Passed number must be positive integer.')
+            raise ValueError('Passed number must be a positive integer.')
 
     return wrapper
 
@@ -14,4 +14,4 @@ def positive_checker(func):
 def fun(x: int):
     return x
 
-print(fun(-5))
+fun(-5)
