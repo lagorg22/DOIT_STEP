@@ -50,7 +50,7 @@ for character in characters_data:
     for ep_id in episode_ids:
         episodes.append(episodes_data[int(ep_id)])
 
-    #mkvdari da cocxali ricki gaertianebulia
+    #mkvdari da cocxali xalxi gaertianebulia
     if name in result:
         result[name] += episodes
     else:
