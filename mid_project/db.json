@@ -1,0 +1,57 @@
+{
+    "0": {
+        "name": "Lasha Gorgodze",
+        "roll_number": 0,
+        "grade": "A"
+    },
+    "1": {
+        "name": "Giorgi Tabukashvili",
+        "roll_number": 1,
+        "grade": "F"
+    },
+    "3": {
+        "name": "Bondo Giorgadze",
+        "roll_number": 3,
+        "grade": "F"
+    },
+    "5": {
+        "name": "Gocha Xaburzania",
+        "roll_number": 5,
+        "grade": "E"
+    },
+    "6": {
+        "name": "Sandro Axalaia",
+        "roll_number": 6,
+        "grade": "A"
+    },
+    "78": {
+        "name": "Ana Lezhava",
+        "roll_number": 78,
+        "grade": "A"
+    },
+    "55": {
+        "name": "Grisha Oniani",
+        "roll_number": 55,
+        "grade": "A"
+    },
+    "44": {
+        "name": "Badri Shubladze",
+        "roll_number": 44,
+        "grade": "F"
+    },
+    "41": {
+        "name": "Lasha Talakhadze",
+        "roll_number": 41,
+        "grade": "E"
+    },
+    "32": {
+        "name": "Lekso Xintibidze",
+        "roll_number": 32,
+        "grade": "D"
+    },
+    "43": {
+        "name": "Saba Jorbenadze",
+        "roll_number": 43,
+        "grade": "E"
+    }
+}
