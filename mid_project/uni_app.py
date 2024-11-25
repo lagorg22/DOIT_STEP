@@ -1,5 +1,6 @@
 from menu import Menu
 
+#console guide for the user
 class App:
     def __init__(self):
         self.menu = Menu()
@@ -7,17 +8,22 @@ class App:
             'c': self.change_grade,
             'd': self.display_students,
             's': self.display_student,
-            'a': self.add_student
+            'a': self.add_student,
+            'r': self.remove_student
         }
 
-    def run(self):
-        print('======================SchoolApp is running========================\n')
+    def remind_commands(self):
         print('Here are the commands for this application: \n'
               'close: "x"\n'
               'display students: "d"\n'
               'display student: "s" \n'
               'change grade: "c"\n'
-              'add student: "a" \n')
+              'add student: "a" \n'
+              'remove student: "r"')
+
+    def run(self):
+        print('======================SchoolApp is running========================\n')
+        self.remind_commands()
         while True:
             command = input('Enter command: \n')
             if command == 'x':
@@ -25,7 +31,7 @@ class App:
                 break
 
             if command not in self.commands.keys():
-                continue
+                self.remind_commands()
             self.commands[command]()
 
     def __get_roll_num(self)->int:
@@ -67,5 +73,10 @@ class App:
         grade = self.__get_grade()
         name = input('Enter student name: \n').title()
         self.menu.add_student(name, roll_number, grade)
+
+    def remove_student(self):
+        print('--------------------Removing existing student--------------------------\n')
+        roll_number = self.__get_roll_num()
+        self.menu.remove_student(roll_number)
 
 

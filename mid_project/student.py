@@ -16,6 +16,7 @@ class Student:
     def __str__(self):
         return f'Name: {self.name}, Roll Number: {self.roll_number}, Grade: {self.grade}'
 
+    #method for converting Student object into dictionary
     def to_dict(self) -> dict:
         return {
             'name': self.name,
