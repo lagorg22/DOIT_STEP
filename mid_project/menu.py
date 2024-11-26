@@ -16,9 +16,10 @@ class Menu:
         roll_number = str(roll_number)
         if self.is_student_present(roll_number):
             stud = self.__students[roll_number]
+            old_grade = stud.grade
             stud.grade = grade
             self.__refresh_db()
-            print(f'Grade of student: {stud.name} has changed to {grade}')
+            print(f'Grade of student: {stud.name} has changed from {old_grade} to {grade}')
         else:
             print(f'There is no student with roll number {roll_number}')
 

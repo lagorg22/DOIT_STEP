@@ -2,32 +2,27 @@
     "0": {
         "name": "Lasha Gorgodze",
         "roll_number": 0,
-        "grade": "E"
+        "grade": "A"
     },
     "1": {
-        "name": "Giorgi Tabukashvili",
+        "name": "Irakli Tabatadze",
         "roll_number": 1,
-        "grade": "D"
+        "grade": "A"
+    },
+    "2": {
+        "name": "Grisha Oniani",
+        "roll_number": 2,
+        "grade": "B"
     },
     "3": {
         "name": "Bondo Giorgadze",
         "roll_number": 3,
         "grade": "A"
     },
-    "55": {
-        "name": "Grisha Oniani",
-        "roll_number": 55,
-        "grade": "A"
-    },
-    "2": {
-        "name": "Bonnie Mccoy Mcgee",
-        "roll_number": 2,
-        "grade": "D"
-    },
     "4": {
         "name": "Jessica White Rojas",
         "roll_number": 4,
-        "grade": "F"
+        "grade": "E"
     },
     "5": {
         "name": "Jessica Phillips Kline",
@@ -297,6 +292,6 @@
     "59": {
         "name": "Bryan Ward Benitez",
         "roll_number": 59,
-        "grade": "E"
+        "grade": "F"
     }
 }
