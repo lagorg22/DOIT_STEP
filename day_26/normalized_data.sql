@@ -1,8 +1,8 @@
 create table customers(
     customer_id serial primary key,
-    customer_name varchar(100),
-    customer_phone varchar(25),
-    delivery_address varchar(100)
+    customer_name varchar(100) not null,
+    customer_phone varchar(25) not null,
+    delivery_address varchar(100) not null
 );
 
 drop table customers;
@@ -16,10 +16,10 @@ values
 
 create table products(
     product_id serial primary key,
-    product_name varchar(100),
-    product_category varchar(100),
-    product_category_type varchar(100),
-product_price float
+    product_name varchar(100) not null ,
+    product_category varchar(100) not null ,
+    product_category_type varchar(100) not null,
+    product_price float not null
 );
 
 drop table products;
@@ -40,8 +40,12 @@ create table orders (
     customer_id int not null references customers(customer_id),
     product_id int not null references products(product_id),
     quantity int not null ,
-    order_date date not null
+    order_date date not null,
+    foreign key (customer_id) references customers (customer_id) on delete cascade,
+    foreign key (product_id) references products (product_id) on delete cascade
 );
+
+drop table orders;
 
 insert into  orders (order_id, customer_id, product_id, quantity, order_date)
 values
