@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+
+{% block title %} Events {% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+{% for book in books %}
+    
+    <div class="card" style="width: 18rem;">
+        <img src="{{ book.image }}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p>Title: {{ book.title }}</p>
+            <p>Publish Date: {{ book.publish_date }}</p>
+            <p>Page Count: {{ book.page_count }}</p>
+            <p>Author: {{ book.author }}</p>
+            <p>Category: {{ book.category }}</p> 
+        </div>
+      </div>
+  
+
+{% endfor %}
+</div>
+</div>
+
+
+{% endblock %}

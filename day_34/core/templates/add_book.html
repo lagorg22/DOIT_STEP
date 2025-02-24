@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+
+{% block title %} Events {% endblock %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+<form method="post">
+
+    {{ form|crispy }}
+
+    {% csrf_token %}
+    <button type="submit">Add Book</button>
+
+<form>
+
+
+{% endblock %}
